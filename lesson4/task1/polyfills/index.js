@@ -1,5 +1,5 @@
 export const printProfile = profileData => {
     console.log('implementation for printProfile');
-    const { name, from } = profileData;
-    console.log(`${name} from ${from}`);
+    const { name, company } = profileData;
+    console.log(`${name} from ${company}`);
 };
