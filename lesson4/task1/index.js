@@ -16,3 +16,5 @@ const userDataPromise = fetchUser('facebook');
 printProfile({ name: 'Tom', company: 'The World' });
 
 // убедитесь, скрипт выполнился без ошибок
+
+// hey you
