@@ -6,7 +6,6 @@ export const onToggleTask = (event) => {
   const taskId = event.target.dataset.id;
   const tasks = getItem("tasksList");
   const { text, creatDate } = tasks.find((task) => task.id === taskId);
-
   const done = event.target.checked;
 
   const updatedTask = {

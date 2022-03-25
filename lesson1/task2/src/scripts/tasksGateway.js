@@ -1,5 +1,4 @@
-const baseUrl =
-  "https://622c2e42087e0e041e050636.mockapi.io/tasks";
+const baseUrl = "https://623d57ac7efb5abea68cf7da.mockapi.io/api/v1/tasks";
 
 const mapTasks = (tasks) =>
   tasks.map(({ _id, ...rest }) => ({ ...rest, id: _id }));
@@ -12,9 +11,9 @@ export const getTasksList = () => {
 
 export const creatTask = (taskData) => {
   return fetch(baseUrl, {
-    method: "Post",
+    method: "POST",
     headers: {
-      "Content-Type": "application/json=utf-8",
+      "Content-Type": "application/json;charset=utf-8",
     },
     body: JSON.stringify(taskData),
   });
@@ -25,7 +24,7 @@ export const updateTask = (taskId, updatedTaskData) => {
   return fetch(`${baseUrl}/${taskId}`, {
     method: "Put",
     headers: {
-      "Content-Type": "application/json=utf-8",
+      "Content-Type": "application/json;charset=utf-8",
     },
     body: JSON.stringify(updatedTaskData),
   });
