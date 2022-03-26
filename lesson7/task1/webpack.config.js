@@ -1,5 +1,5 @@
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlagin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     entry: './src/index.js',
@@ -32,6 +32,5 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: '[name].css'
         })
-        
     ]
 };
