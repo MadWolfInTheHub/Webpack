@@ -14,8 +14,8 @@ module.exports = {
                 use:{
                     loader: 'url-loader',
                     options: {
-                        limit: 8,
-                        name: '[path][name].[txt]',
+                        limit: 8192,
+                        name: '[name].[txt]',
                         outPath: 'images',
                     },
                 },
