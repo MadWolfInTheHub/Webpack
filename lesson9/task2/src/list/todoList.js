@@ -1,14 +1,14 @@
-import { onCreateTask } from "./addTask.js";
-import { onToggleTask, onDeleteTask } from "./renderList.js";
+import { onCreateTask } from './addTask';
+import { onToggleTask, onDeleteTask } from './renderList';
 
 export const initTodoListHandlers = () => {
-  const createBtn = document.querySelector(".create-task-btn");
-  createBtn.addEventListener("click", onCreateTask);
+  const createBtn = document.querySelector('.create-task-btn');
+  createBtn.addEventListener('click', onCreateTask);
 
   const onActionCheck = (event) => {
-    const isCheckBox = event.target.classList.contains("list-item__checkbox");
+    const isCheckBox = event.target.classList.contains('list-item__checkbox');
     const isDeleteBtn = event.target.classList.contains(
-      "list-item__delete-btn"
+      'list-item__delete-btn',
     );
 
     if (!isCheckBox && !isDeleteBtn) {
@@ -24,6 +24,6 @@ export const initTodoListHandlers = () => {
     }
   };
 
-  const listElem = document.querySelector(".list");
-  listElem.addEventListener("click", onActionCheck);
+  const listElem = document.querySelector('.list');
+  listElem.addEventListener('click', onActionCheck);
 };
