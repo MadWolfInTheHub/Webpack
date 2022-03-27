@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest -w",
     "start": "webpack-dev-server -d --devtools eval-source-maps --open",
+    "test": "jest -w",
+    "test:watch": "jest --watch",
     "build": "webpack -p"
   },
   "keywords": [],
